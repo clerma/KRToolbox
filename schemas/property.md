@@ -1,0 +1,19 @@
+layout: 
+name: 
+title: 
+description: 
+keywords: 
+image: 
+image-2: 
+image-3: 
+video:
+logo: 
+short_description: 
+address: 
+phone: 
+email: 
+social_media:
+  facebook:
+  Instagram:
+map: 
+form_id:

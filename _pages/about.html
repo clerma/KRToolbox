@@ -1,0 +1,68 @@
+---
+title: Venues in Lafayette, LA - Belle Vie Hospitality
+description: Learn more about some of the best venues in Lafayette. Gain access to our range of venue options, event coordinators and everything you need for a successful event.
+keywords: weddings, receptions, corporate events, conferences, meetings, parties, banquets, catering, ballroom, outdoor events, indoor events,venue rental, event planning, audiovisual equipment, dance floor, stage, lighting, decorations, parking, Lafayette LA, cocktail hour,rehearsal dinners, bridal showers, baby showers, graduation parties, proms, galas, fundraisers, trade shows, expos, product launches, team building activities, holiday parties, birthday celebrations, anniversary parties, photo shoots, film screenings, live music events, food and beverage services, event coordination
+layout: default
+permalink: "about-belle-vie"
+---
+    <div class="container mt-4">
+      <div class="row justify-content-between">
+      
+          <section>
+              <div class="row mb-5">
+                <div class="col-lg-12">
+                  <h5 class=" text-primary mb-4 editable">About Us</h5>
+                  <h6 class="lh-sm editable">At Belle Vie Hospitality, our team is the heart and soul of our company. Comprised of passionate individuals dedicated to providing exceptional service, we strive to create unforgettable experiences for our guests. From talented chefs crafting exquisite dishes to attentive staff ensuring every detail is perfect, our team works in harmony to deliver a delightful atmosphere and exceptional hospitality. With a shared commitment to excellence, we take pride in making every moment a cherished memory for our valued guests.</h6>
+                </div>
+              </div>
+              <hr />
+          </section>
+
+          <section class="mt-4">
+              <div class="row mb-4">
+                <div class="col-lg-8">
+                  <h5 class=" text-primary editable">Our Team</h5>
+                </div>
+              </div>
+              <div class="row g-3 g-xl-5 mb-10">
+     
+                {% for item in site.data.staff %}
+                <div class="col-md-6 col-lg-4">
+                {% comment %}  <a href="#" data-bs-toggle="modal" data-bs-target="#{{item.Name | replace: " ", "-"}}-1">{% endcomment %}
+                  <div class="card">
+                    <div class="equal-1-1 equal-md-3-4 mb-2">
+                     <img src="{{item.Image}}" class="img-fluid"/>
+                    </div>
+                    <h4 class="card-title mb-1" data-bs-toggle="modal"
+                    data-bs-target="#modal-2">{{item.Name}}</h4>
+                    <span class="text-secondary">{{item.Position}}</span>
+                  </div>
+                  {% comment %}</a>{% endcomment %}
+                </div>
+                {% endfor %}
+
+              </div>
+          </section>
+      
+        </div>
+  </div>
+{% comment %}
+ <!-- {% for item in site.data.staff %}
+  <div class="modal fade" id="{{item.Name | replace: " ", "-"}}-1" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <button type="button" class="bi bi-x modal-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-body row px-md-4 p-2">
+          <div class="col-md-6 ps-1">
+            <img src="{{item.Image}}" class="img-fluid"/>
+          </div>
+          <div class="col-md-6 ps-1 py-4">
+          <h3 id="modalLabel">{{item.Name}}</h3>
+          <p class="text-secondary lh-base">{{item.Bio}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endfor %} -->
+{% endcomment %}

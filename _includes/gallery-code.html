@@ -1,0 +1,57 @@
+ {% for item in site.data.gallery %} 
+ {% if item.location == page.name %}
+ {% assign groupcounter = groupcounter | plus: 1 %}
+ {% assign forloopcounter = groupcounter | divided_by: 2 %}
+ {% endif %}
+ {% endfor %} 
+ <div class="container-fluid gallery-1" data-aos="fade-up">
+	<div class="row g-2 g-xl-5 mb-2">
+		<div class="carousel">
+		<div data-carousel='{"mouseDrag": true, "gutter": 20, "loop": false, "items": 1, "nav": false, "responsive": {"0": {"items": 1}, "768": {"items": 2}, "992": {"items": 2}, "1200": {"items": 3}}}'>
+	  {% assign counter = 0 %}
+	{% for item in site.data.gallery %} 
+	{% if item.location == page.name %}
+	{% assign counter = counter | plus: 1 %}
+	{% if counter < forloopcounter %}
+	{% if item.image contains "https://" %}
+	{% else %}
+	  <div class="col-6 col-lg-5">
+		<a class="media equal equal-16-10 media-image" href="{{item.image}}" data-lightbox="gallery-1" {% if item.photographer-credit %} data-title="{{item.photographer-credit}}" {% endif %}>
+			<figure class="media equal equal-16-10 media-image">
+				<span style="background-image: url('{{item.image}}');"></span>
+			</figure>
+		</a>         
+	 </div>
+	 {% endif %}
+	 {% endif %}
+	{% endif %}
+  {% endfor %}
+		</div>
+		</div>
+	</div>
+	<div class="row flex-nowrap align-items-start g-2 g-xl-5">
+		<div class="carousel">
+		<div data-carousel='{"mouseDrag": true, "gutter": 20, "loop": false, "items": 1, "nav": false, "responsive": {"0": {"items": 1}, "768": {"items": 2}, "992": {"items": 2}, "1200": {"items": 3}}}'>
+	  {% assign second-counter = 0 %}
+  {% for item in site.data.gallery %} 
+	{% if item.location == page.name %}
+	{% assign second-counter = second-counter | plus: 1 %}
+	{% if second-counter > forloopcounter %}
+	{% if item.image contains "https://" %}
+	{% else %}
+	  <div class="col-6 col-lg-5">
+		<a class="media equal equal-16-10 media-image" href="{{item.image}}" data-lightbox="gallery-1" {% if item.photographer-credit %} data-title="{{item.photographer-credit}}" {% endif %}>
+			<figure class="media equal equal-16-10 media-image">
+				<span style="background-image: url('{{item.image}}');"></span>
+			</figure>
+		</a>     
+	 </div>
+	 {% endif %}
+	 {% endif %}
+	  {% endif %}
+  	  {% endfor %}
+		</div>
+		</div>
+	</div>
+  </div>
+  

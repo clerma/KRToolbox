@@ -1,0 +1,15 @@
+email: info@belleviehospitality.com
+logo: ../assets/images/logo/bellvie.svg
+address: 338 N Sterling St. Lafayette, LA, 70501
+phone: 337.233.7816
+g_analytics:
+social:
+  - name: instagram
+    link: https://www.instagram.com/
+    icon: fa-instagram
+  - name: facebook
+    link: www.facebook.com
+    icon: fa-facebook
+  - name: twitter
+    link: www.twitter.com
+    icon: fa-twitter

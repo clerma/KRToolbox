@@ -1,0 +1,33 @@
+---
+title: Venues in Lafayette, LA - Belle Vie Hospitality
+description: Learn more about some of the best venues in Lafayette. Gain access to our range of venue options, event coordinators and everything you need for a successful event.
+keywords: weddings, receptions, corporate events, conferences, meetings, parties, banquets, catering, ballroom, outdoor events, indoor events venue rental, event planning, audiovisual equipment, dance floor, stage, lighting, decorations, parking, Lafayette LA, cocktail hour, rehearsal dinners, bridal showers, baby showers, graduation parties, proms, galas, fundraisers, trade shows, expos, product launches, team building activities, holiday parties, birthday celebrations, anniversary parties, photo shoots, film screenings, live music events, food and beverage services, event coordination
+layout: default
+permalink: "/articles/"
+---
+
+<section class="py-5 py-xl-10">
+	<div class="container">
+		<h1 class="mb-1 editable">Blog</h1>
+		<div class="row g-4 g-xl-5 justify-content-between mt-5">
+			{% for post in site.posts %}
+			{% if post.categories contains 'article' %}
+			<div class="col-md-6">
+				<article class="card hover-arrow">
+					<a href="{% include relative-src.html src=item.url %}{{post.url}}"><img src="{% include relative-src.html src=item.url %}{{post.image}}" class="card-img-top" alt="{{post.title}}" style="height: 25em;object-fit: cover;" /></a>
+					<div class="card-body p-0 pe-lg-10 mt-2">
+						<a href="{% include relative-src.html src=item.url %}{{post.url}}" class="card-title">
+							<h5>
+								{{post.title}}
+							</h5>
+						</a>
+						<time datetime="{{post.date}}" class="eyebrow text-muted">{{post.date | date: "%B %d, %Y"}}</time>
+					</div>
+				</article>
+			</div>
+			{% endif %}
+			{% endfor %}
+			
+		</div>
+	</div>
+</section>
