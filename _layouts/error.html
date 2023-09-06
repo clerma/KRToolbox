@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include head.html %} {% capture seo %} {% seo %}
+    <meta name="keywords" content="{{page.keywords}}" />
+    {% endcapture %} {{seo | remove: "Jekyll"}}
+  </head>
+  <body>
+    <!-- Page loading spinner-->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner"></div><span>Loading...</span>
+      </div>
+    </div>
+    {% include nav.html %}
+    <!-- navbar -->
+    <main class="page-wrapper">
+    {{ content }} 
+    </main>
+    {% include footer.html %} {% include scripts.html %}
+  </body>
+</html>

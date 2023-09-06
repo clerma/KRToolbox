@@ -6,17 +6,77 @@
     {% endcapture %} {{seo | remove: "Jekyll"}}
   </head>
   <body>
-    <!-- Page loading spinner-->
-    <div class="page-loading active">
-      <div class="page-loading-inner">
-        <div class="page-spinner"></div><span>Loading...</span>
-      </div>
-    </div>
     {% include nav.html %}
+    <section class="main-banner home-style-second">
+    <div class="slides-wrap">
+    <div class="owl-carousel owl-theme">
+    
+    <div class="owl-slide d-flex align-items-center cover" style="background-image: url(assets/images/slider/slider_home_first_1.jpg);">
+    <div class="container">
+    <div class="row justify-content-center justify-content-md-start no-gutters">
+    <div class="col-10 col-md-6 static">
+    <div class="owl-slide-text">
+    <h3 class="owl-slide-animated owl-slide-title">Raising Hope</h3>
+    <h1 class="owl-slide-animated owl-slide-subtitle">
+    To The Homeless People
+    </h1>
+    <div class="owl-slide-animated owl-slide-cta">
+    <a class="btn btn-default me-3" href="causes-list.html" role="button">Join Us Now</a>
+    <a class="slider-link popup-video" href="https://player.vimeo.com/video/7449107">Watch the video <i class="charity-play_button"></i></a>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    
+    
+    <div class="owl-slide d-flex align-items-center cover" style="background-image: url(assets/images/slider/slider_home_first_2.jpg);">
+    <div class="container">
+    <div class="row justify-content-center justify-content-md-start no-gutters">
+    <div class="col-10 col-md-6 static">
+    <div class="owl-slide-text">
+    <h3 class="owl-slide-animated owl-slide-title">Raising Hope</h3>
+    <h1 class="owl-slide-animated owl-slide-subtitle">
+    To The Homeless People
+    </h1>
+    <div class="owl-slide-animated owl-slide-cta">
+    <a class="btn btn-default me-3" href="causes-list.html" role="button">Join Us Now</a>
+    <a class="slider-link popup-video" href="https://player.vimeo.com/video/7449107">Watch the video <i class="charity-play_button"></i></a>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    
+    <div class="owl-slide d-flex align-items-center cover" style="background-image: url(assets/images/slider/slider_home_first_3.jpg);">
+    <div class="container">
+    <div class="row justify-content-center justify-content-md-start no-gutters">
+    <div class="col-10 col-md-6 static">
+    <div class="owl-slide-text">
+    <h3 class="owl-slide-animated owl-slide-title">Raising Hope</h3>
+    <h1 class="owl-slide-animated owl-slide-subtitle">
+    To The Homeless People
+    </h1>
+    <div class="owl-slide-animated owl-slide-cta">
+    <a class="btn btn-default me-3" href="causes-list.html" role="button">Join Us Now</a>
+    <a class="slider-link popup-video" href="https://player.vimeo.com/video/7449107">Watch the video <i class="charity-play_button"></i></a>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    
+    </div>
+    </div>
+    </section>
     <!-- navbar -->
-    <main class="page-wrapper">
+   <main id="body-content" class="body-non-overflow">
     {{ content }} 
     </main>
-    {% include footer.html %} {% include scripts.html %}
+    {% include footer.html %} 
+    {% include scripts.html %}
   </body>
 </html>

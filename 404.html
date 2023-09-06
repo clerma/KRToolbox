@@ -1,19 +1,14 @@
 ---
 title: Missing Page
-layout: default
+layout: error
 ---
   <!-- hero -->
-  <section>
-    <div class="d-flex flex-column container min-vh-75 py-10">
-      <div class="row align-items-center justify-content-center justify-content-lg-between my-auto">
-        <div class="col-lg-6 order-lg-2">
-          <img class="img-fluid" src="/assets/images/svg/404.svg" alt="Figure">
-        </div>
-        <div class="col-md-8 col-lg-5 order-lg-1 text-center text-lg-start">
-          <h1 class="display-2 text-primary">Sorry, page not found.</h1>
-          <a href="/" class="btn btn-rounded btn-outline-white rounded-pill bg-primary">Go back to homepage</a>
-        </div>
-      </div>
+  <div class="container d-flex flex-column justify-content-center vh-100">
+    <lottie-player class="d-dark-mode-none mt-n5" src="assets/json/animation-404-light.json" background="transparent" speed="1" loop autoplay></lottie-player>
+    <lottie-player class="d-none d-dark-mode-block mt-n5" src="assets/json/animation-404-dark.json" background="transparent" speed="1" loop autoplay></lottie-player>
+    <div class="text-center pt-5 mt-lg-2">
+      <h1 class="display-5">Page not found</h1>
+      <p class="fs-lg pb-2 pb-md-0 mb-4 mb-md-5">The page you are looking for was moved, removed or might never existed.</p><a class="btn btn-lg btn-primary" href="/">Go to homepage</a>
     </div>
-  </section>
+  </div>
 
