@@ -6204,7 +6204,7 @@ label.error {
     
     .header-style-fullwidth .navbar-expand-lg .navbar-nav .nav-link { color: var(--white); border-radius: 3px; }
     .logo-small {padding: 1rem 0 ; display: block;  }
-    .logo-small img { width: 150px; }
+    .logo-small img { width: 75px; }
     html.sidenav-open{ overflow: hidden; }
     .sidenav-open .navbar-collapse { left: 0;}
 	.navbar-toggler{ padding: 10px 0; border: none; outline: none !important; margin-left: 15px; }
